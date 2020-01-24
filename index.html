@@ -14,17 +14,17 @@
         <header>
             <nav class="main-nav">
                 <a href="#" class='logo'>
-                    <img src="#" alt="logo">
+                    <img src="./svg/nerds-logo.svg" width='160' height='65' alt="logo">
                 </a>
                 <ul class="site-nav">
                     <li> <a href="#">Студия</a></li>
                     <li> <a href="#">Клиенты</a></li>
-                    <li> <a href="#">Магазин</a></li>
+                    <li> <a href="/catalog.html">Магазин</a></li>
                     <li> <a href="#">Контакты</a></li>
 
                 </ul>
                 <ul class="user-nav">
-                    <li><img src="#" alt="Корзина" class='cart'>Корзина</li>
+                    <li><img src="./svg/cart-icon.svg" alt="Корзина" class='cart'>Корзина</li>
                 </ul>
             </nav>
 
@@ -77,7 +77,8 @@
             </section>
             <section class="advantages">
                 <div class="advantage">
-                    <img src="#" alt="advantage-1-img" class="advantage-img">
+                    <img src="/img/illustration-1.png" alt="advantage-1-img" class="advantage-img" width="300"
+                        height="146">
                     <h4>
                         Веб-сайты
                     </h4>
@@ -88,7 +89,8 @@
 
                 </div>
                 <div class="advantage">
-                    <img src="#" alt="advantage-2-img" class="advantage-img">
+                    <img src="/img/illustration-2.png" alt="advantage-2-img" class="advantage-img" width="300"
+                        height="146">
                     <h4>
                         Приложения
                     </h4>
@@ -99,7 +101,8 @@
 
                 </div>
                 <div class="advantage">
-                    <img src="#" alt="advantage-3-img" class="advantage-img">
+                    <img src="/img/illustration-3.png" alt="advantage-3-img" class="advantage-img" width="300"
+                        height="146">
                     <h4>
                         Презентации
                     </h4>
@@ -128,7 +131,7 @@
                 </div>
 
                 <div class="studio-graph">
-                    <img src="#" alt="nerds-illustration">
+                    <img src="/img/nerds-illustration.png" alt="nerds-illustration">
                     <h5>с 2004 года Любим точность во всем:</h5>
                     <div class="studio-numbers">
                         <div class="studio-number">
@@ -152,10 +155,10 @@
                 </div>
             </section>
             <section class="sites">
-                <a href="#"><img src="#" alt="htmla-academy"></a>
-                <a href="#"><img src="#" alt="borodinski"></a>
-                <a href="#"><img src="#" alt="pink"></a>
-                <a href="#"><img src="#" alt="mishka"></a>
+                <a href="#"><img src="/img/logo-1.png" alt="html-academy"></a>
+                <a href="#"><img src="/img/logo-2.png" alt="borodinski"></a>
+                <a href="#"><img src="/img/logo-3.png" alt="pink"></a>
+                <a href="#"><img src="/img/logo-4.png" alt="mishka"></a>
             </section>
         </main>
         <footer>
@@ -168,6 +171,7 @@
                     <input type="submit" class='button button-contacts' value='Напишите нам'>
                     <img src="#" alt="map-marker" class="marker">
                     <!-- TODO iframe -->
+                    <button class='button'>Напишите нам</button>
                 </div>
 
 
@@ -175,23 +179,42 @@
 
 
             <ul class="social">
-                <li> <a href="#"><img src="#" alt="vkontakte"></a> </li>
-                <li> <a href="#"><img src="#" alt="facebook"></a></li>
-                <li> <a href="#"><img src="#" alt="instagram"></a></li>
+                <li> <a href="/svg/vk-icon.svg"><img src="#" alt="vkontakte"></a> </li>
+                <li> <a href="/svg/fb-icon.svg"><img src="#" alt="facebook"></a></li>
+                <li> <a href="/svg/insta-icon.svg"><img src="#" alt="instagram"></a></li>
             </ul>
             <h3>Давайте дружить, это выгодно!</h3>
             <h5>Скидка 10% для друзей из социальных сетей.</h5>
 
         </footer>
+        <section class="write-us hidden">
 
+            <h2>Напишите нам</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <label class='write-us-label'>
+                    <p>Введите имя</p>
+                    <input type="text" name="name" id="write-us-name"placeholder="Имя фамилия">
+                </label>
+                <label class='write-us-label'>
+                    <p>Ваш e-mail</p>
+                    <input type="email" name="mail" id="write-us-mail" placeholder='email@example.com'>
+    
+                </label>
+                <label class='write-us-label'>
+                    <p>Текст письма</p>
+                    <textarea name="text" id="write-us-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+    
+    
+                </label>
+                <button type="submit" class='button'>Отправить</button>
+                <!-- todo cross background -->
+    
+                <!-- <form action=""></form> -->
+            </form>
+        </section>
 
     </wrapper>
-    <section class="write-us hidden">
-        <h2>Напишите нам</h2>
-        <!-- todo cross background -->
-        <!-- todo form -->
-        <!-- <form action=""></form> -->
-    </section>
+   
 </body>
 
 </html>
