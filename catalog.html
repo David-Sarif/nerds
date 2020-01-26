@@ -23,7 +23,7 @@
 
                 </ul>
                 <ul class="user-nav">
-                    <li><img src="#" alt="Корзина" class='cart'>Корзина</li>
+                    <li><img src="/svg/cart-icon.svg" alt="Корзина" class='cart'>Корзина</li>
                 </ul>
             </nav>
 
@@ -31,18 +31,49 @@
         <main>
             <h2>Магазин готовых шаблонов</h2>
             <section class="filters">
-
+                <p>Стоимость:</p>
+                <form action="https://echo.htmlacademy.ru/courses" method='post'>
+                <input type="range" name="price-range" id="price-range">
+                <label for="price-low">от</label>
+                <input type="number" name="price-low" id="price-low">
+                <label for="price-top">до</label>
+                <input type="number" name="price-top" id="price-top">
+                <p>Сетка:</p>
+                <input type="radio" name="price-grid" id="price-grid-adaptive">
+                <label for="price-grid-adaptive">Адаптивная</label>
+                <input type="radio" name="price-grid" id="price-grid-fixed">
+                <label for="price-grid-fixed">Фиксированая</label>
+                <input type="radio" name="price-grid" id="price-grid-flexible">
+                <label for="price-grid-flexible">Резиновая</label>
+                <p>Особенности</p>
+                <input type="checkbox" name="price-slider" id="price-slider">
+                <label for="price-slider">Слайдер</label>
+                <input type="checkbox" name="price-advantages" id="price-advantages">
+                <label for="price-advantages">Блок преимуществ</label>
+                <input type="checkbox" name="price-news" id="price-news">
+                <label for="price-news">Новости</label>
+                <input type="checkbox" name="price-gallery" id="price-gallery">
+                <label for="price-gallery">Галлерея</label>
+                <input type="checkbox" name="price-cart" id="price-cart">
+                <label for="price-cart">Корзина</label>
+                <button type='submit' class='button button-price'>Показать</button>
+                
+                
+                
+                
+                </form>
                 <!-- TODO controls -->
             </section>
             <section class="shop">
                 <p>Сортировать</p>
-                <ul class="shop-controls">
-                    <li>По цене</li>
-                    <li>По типу</li>
-                    <li>По названию</li>
-                    <li class='sort-down'></li>
-                    <li class='sort-up'></li>
-                </ul>
+                
+                    <button type="button">По цене</button>
+                    <button type="button">По типу</button>
+                    <button type="button">По названию</button>
+                    <button type="button">sort-down</button>
+                    <button type="button">sort-up</button>
+
+                
 
                 <ul class="shop-examples">
                     <li><img src="/svg/browser.svg" alt="site"><img src="/img/img-sedona.png" alt="sedona">
@@ -114,9 +145,9 @@
                     <p>191186, Санкт-Петербург,
                         ул. Б. Конюшенная, д. 19/8</p>
                     <p>тел. +7 (812) 275-75-75</p>
-                    <input type="submit" class='button button-contacts' value='Напишите нам'>
+
                     <img src="#" alt="map-marker" class="marker">
-                    <button class='button'>Напишите нам</button>
+                    <button class='button button-contacts' >Напишите нам</button>
                     <!-- TODO iframe -->
                 </div>
 
